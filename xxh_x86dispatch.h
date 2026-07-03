@@ -32,6 +32,10 @@
  *   - xxHash source repository: https://github.com/Cyan4973/xxHash
  */
 
+/* Declare the CPU dispatcher only for the slice that implements it. */
+#if (defined(__x86_64__) || defined(__i386__) || defined(_M_IX86) || defined(_M_X64)) \
+    && !defined(_M_ARM64EC)
+
 #ifndef XXH_X86DISPATCH_H_13563687684
 #define XXH_X86DISPATCH_H_13563687684
 
@@ -112,3 +116,5 @@ XXH_DISPATCH_API XXH_errorcode XXH3_128bits_update_dispatch(XXH_NOESCAPE XXH3_st
 #endif /* XXH_DISPATCH_DISABLE_REPLACE */
 
 #endif /* XXH_X86DISPATCH_H_13563687684 */
+
+#endif /* x86 dispatcher */

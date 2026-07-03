@@ -1,70 +1,103 @@
-# objects
+# C++ objects and libs
+*.slo
+*.lo
 *.o
-*.obj
-*.s
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
 
-# libraries
-libxxhash.*
-!libxxhash.pc.in
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
 
-# Executables
-*.exe
-xxh32sum
-xxh64sum
-xxh128sum
-xxh3sum
-xxhsum
-xxhsum32
-xxhsum_privateXXH
-xxhsum_inlinedXXH
-dispatch
-tests/generate_unicode_test
-tests/sanity_test
-tests/invalid_args
-tests/sanity_test_vectors_generator
-tests/test_alias
-fuzzer
+# Qt unit tests
+target_wrapper.*
 
-# Archives
+# QtCreator
+*.autosave
+
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
+
+# QtCreator 4.8< compilation database
+compile_commands.json
+
+# QtCreator local machine specific files for imported projects
+*creator.user*
+
+# My
+[Bb]in/
+[Bb]in32/
+[Bb]in64/
+[Ll]ib/
+[Ll]ib32/
+[Ll]ib64/
+[Tt]est/
+[Tt]ests/
+[Ii]nstall/
+[Ii]nstall32/
+[Ii]nstall64/
+[Bb]uild*/
+[Oo]utput*/
+[Pp]ublish*/
+*.7z
 *.zip
-
-# Mac OS-X artefacts
-*.dSYM
+*.rar
+*.tar
+*.gz
+*.xz
+*.iso
+*.wim
+*.exe
+*.lib
+*.pdb
+*.ilk
+*.exp
+*.obj
+*.res
+*.rc
+*.bin
+*.run
+Thumbs.db
+build.user.bat
+build.user.sh
+user.conf
+.qmake.conf
+.cmake.conf
 .DS_Store
-
-# Wasm / emcc / emscripten artefacts
-*.html
-*.wasm
-*.js
-
-# build artifacts
-cachedObjs/
-variants/
-cmakebuild/
-my_build/
-
-
-# project managers artifacts
-.projectile
-
-# analyzer artifacts
-infer-out
-
-# test artifacts
-.test*
-tmp*
-tests/*.unicode
-tests/unicode_test*
-*.txt
-!CMakeLists.txt
-*.xxhsum
-
-# editor artifacts
-.clang_complete
-.clangd
-*.swp
 .vscode/
 .vs/
-
-# Doxygen
-doxygen/
+.idea/
+.cache/
+.clion/
+build_for_deploy/
+.qmlls.ini
+.kimi/
+.codex/
+.claude/
